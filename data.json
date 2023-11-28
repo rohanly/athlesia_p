@@ -1,0 +1,112 @@
+{
+  "data": [
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Cricket",
+      "winningTeam": "Blue Team",
+      "winningStatus": "BLUE TEAM WON BY 25 RUNS",
+      "matchDate": "25-11-2023",
+      "matchStatus": "win"
+    },
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Cricket",
+      "winningTeam": "Blue Team",
+      "winningStatus": "BLUE TEAM WON BY 25 RUNS",
+      "matchDate": "25-11-2023",
+      "matchStatus": "win"
+    },
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Football",
+      "winningTeam": "Green Team",
+      "winningStatus": "",
+      "matchDate": "26-11-2023",
+      "matchStatus": ""
+    },
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Football",
+      "winningTeam": "",
+      "winningStatus": "",
+      "matchDate": "26-11-2023",
+      "matchStatus": ""
+    },
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Football",
+      "winningTeam": "",
+      "winningStatus": "",
+      "matchDate": "26-11-2023",
+      "matchStatus": ""
+    },
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Football",
+      "winningTeam": "",
+      "winningStatus": "",
+      "matchDate": "27-11-2023",
+      "matchStatus": ""
+    },
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Football",
+      "winningTeam": "",
+      "winningStatus": "",
+      "matchDate": "27-11-2023",
+      "matchStatus": ""
+    },
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Football",
+      "winningTeam": "",
+      "winningStatus": "",
+      "matchDate": "28-11-2023",
+      "matchStatus": ""
+    },
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Football",
+      "winningTeam": "",
+      "winningStatus": "",
+      "matchDate": "28-11-2023",
+      "matchStatus": ""
+    },
+    {
+      "team1": "Blue Team",
+      "team2": "Green Team",
+      "game": "Football",
+      "winningTeam": "",
+      "winningStatus": "",
+      "matchDate": "28-11-2023",
+      "matchStatus": ""
+    },
+    {
+      "team1": "",
+      "team2": "",
+      "game": "Football",
+      "winningTeam": "",
+      "winningStatus": "",
+      "matchDate": "29-11-2023",
+      "matchStatus": ""
+    },
+    {
+      "team1": "",
+      "team2": "",
+      "game": "Cricket",
+      "winningTeam": "",
+      "winningStatus": "",
+      "matchDate": "29-11-2023",
+      "matchStatus": ""
+    }
+  ]
+}

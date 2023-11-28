@@ -1,10 +1,12 @@
+"use client";
+
 import React, { ReactNode, useEffect, useState } from "react";
-import axios from "axios";
+import axios from "@/lib/axios";
 import { useContext } from "react";
 
 type User = {
   _id: string;
-  email: string;
+  username: string;
   password: string;
   role: string;
   createdAt: string;
@@ -12,7 +14,7 @@ type User = {
 };
 
 type ContextType = {
-  login: (email: string, password: string) => Promise<void>;
+  login: (username: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
   error: string;
   isAuthenticated: boolean;
@@ -90,13 +92,13 @@ const SessionProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
-  const login = async (email: string, password: string) => {
+  const login = async (username: string, password: string) => {
     setLoading(true);
     setIsAuthenticated(false);
 
     try {
       const { data } = await axios.post(`/api/session/login`, {
-        email,
+        username,
         password,
       });
       setSessionUser(data.user);
@@ -109,6 +111,7 @@ const SessionProvider = ({ children }: { children: ReactNode }) => {
     } catch (error: any) {
       setError(error.message);
       setLoading(false);
+      throw error;
     }
   };
 
