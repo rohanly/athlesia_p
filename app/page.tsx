@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import HeroBanner from "@/app/images/HeroBanner.png";
 import greenCarromChar from "@/app/images/greenCarromChar.png";
 import blueCharHero from "@/app/images/blueCharHero.png";
-import redCharBatter from "@/app/images/redCharbatter.png";
+// import redCharBatter from "@/app/images/redCharbatter.png";
 import redCharBall from "@/app/images/redCharBall.png";
 import greenCharBatminton from "@/app/images/greenCharBatminton.png";
 import Image from "next/image";
@@ -27,7 +27,7 @@ export default function HomePage() {
   const imagesArr = [
     greenCarromChar,
     blueCharHero,
-    redCharBatter,
+    // redCharBatter,
     redCharBall,
     greenCharBatminton,
   ];
