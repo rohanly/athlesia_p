@@ -2,29 +2,35 @@
 
 import React from "react";
 import { useState, useEffect } from "react";
-import HeroBanner from "@/public/images/HeroBanner.png";
-import greenCarromChar from "@/public/images/greenCarromChar.png";
-import blueCharHero from "@/public/images/blueCharHero.png";
-import redCharBatter from "@/public/images/redCharbatter.png";
-import redCharBall from "@/public/images/redCharBall.png";
-import greenCharBatminton from "@/public/images/greenCharBatminton.png";
+import HeroBanner from "@/app/images/HeroBanner.png";
+import greenCarromChar from "@/app/images/greenCarromChar.png";
+import blueCharHero from "@/app/images/blueCharHero.png";
+import redCharBatter from "@/app/images/redCharbatter.png";
+import redCharBall from "@/app/images/redCharBall.png";
+import greenCharBatminton from "@/app/images/greenCharBatminton.png";
 import Image from "next/image";
-import blue_team_logo from "@/public/images/blue_team_logo.png";
-import red_team_logo from "@/public/images/red_team_logo.svg";
-import green_team_logo from "@/public/images/green_team_logo.png";
-import Top_Standing_Ribbon from "@/public/images/Top_Standing_Ribbon.png";
-import topStandingBackground from "@/public/images/topStandingBackground.jpg";
+import blue_team_logo from "@/app/images/blue_team_logo.png";
+import red_team_logo from "@/app/images/red_team_logo.svg";
+import green_team_logo from "@/app/images/green_team_logo.png";
+import Top_Standing_Ribbon from "@/app/images/Top_Standing_Ribbon.png";
+import topStandingBackground from "@/app/images/topStandingBackground.jpg";
 import Lottie from "react-lottie-player";
-import banner from "@/public/assets/Website Characters.json";
+import banner from "@/app/assets/Website Characters.json";
 import axios from "@/lib/axios";
-import bronzeGem from "@/public/assets/Bronze Gemstone.json";
-import silverGem from "@/public/assets/Silver Gemstone.json";
-import goldGem from "@/public/assets/Gold Gemstone.json";
+import bronzeGem from "@/app/assets/Bronze Gemstone.json";
+import silverGem from "@/app/assets/Silver Gemstone.json";
+import goldGem from "@/app/assets/Gold Gemstone.json";
 import Link from "next/link";
 import moment from "moment";
 
 export default function HomePage() {
-  const imagesArr = [greenCarromChar, blueCharHero, redCharBatter, redCharBall, greenCharBatminton];
+  const imagesArr = [
+    greenCarromChar,
+    blueCharHero,
+    redCharBatter,
+    redCharBall,
+    greenCharBatminton,
+  ];
 
   // hero section carousal index
   const [currentImage, setCurrentImage] = useState(0);
@@ -83,9 +89,14 @@ export default function HomePage() {
 
       let thursdayDateFormatted = nextThursday.toISOString().slice(0, 10);
 
-      let formatedToAPIDate = thursdayDateFormatted.split("-").reverse().join("-");
+      let formatedToAPIDate = thursdayDateFormatted
+        .split("-")
+        .reverse()
+        .join("-");
 
-      setFormatedDateToStr(moment(thursdayDateFormatted).format("ddd, Do MMMM YYYY"));
+      setFormatedDateToStr(
+        moment(thursdayDateFormatted).format("ddd, Do MMMM YYYY")
+      );
 
       const matchesonThursday = data.data.filter(
         (eachEle: any) => eachEle.matchDate === formatedToAPIDate
@@ -105,7 +116,8 @@ export default function HomePage() {
       const daysToLastThursday = (todayDayNumber + 7 - 4) % 7;
       const lastThursday = todayDate.subtract(daysToLastThursday, "days");
       const latestMatchesArr = data.filter(
-        (eachEle: any) => eachEle.matchDate === lastThursday.format("DD-MM-YYYY")
+        (eachEle: any) =>
+          eachEle.matchDate === lastThursday.format("DD-MM-YYYY")
       );
       console.log(latestMatchesArr);
       setLatestMatches(latestMatchesArr);
@@ -150,7 +162,9 @@ export default function HomePage() {
 
       {/* latest match starts */}
       <div className="px-4 sm:px-[76px]">
-        <div className="text-xl sm:text-[32px] font-semibold text-white mb-4">Latest Matches</div>
+        <div className="text-xl sm:text-[32px] font-semibold text-white mb-4">
+          Latest Matches
+        </div>
 
         {/* desktop match carousal starts */}
         <div className="flex flex-col sm:flex sm:flex-row items-center gap-6 sm:overflow-auto ongoingMatch">
@@ -162,7 +176,9 @@ export default function HomePage() {
               <div className="">
                 {/* card head starts */}
                 <div className="flex items-center justify-between py-4 px-4 sm:py-6 sm:px-6">
-                  <div className="text-2xl font-semibold text-white capitalize">{eachEle.game}</div>
+                  <div className="text-2xl font-semibold text-white capitalize">
+                    {eachEle.game}
+                  </div>
                   <div
                     className={
                       eachEle.matchStatus === "live"
@@ -173,7 +189,9 @@ export default function HomePage() {
                     }
                   >
                     <svg
-                      className={eachEle.matchStatus === "live" ? "block" : "hidden"}
+                      className={
+                        eachEle.matchStatus === "live" ? "block" : "hidden"
+                      }
                       width="9"
                       height="8"
                       viewBox="0 0 9 8"
@@ -423,7 +441,9 @@ export default function HomePage() {
                 </div>
                 {/* left */}
                 <div className="max-w-[300px] flex flex-col gap-[10px]">
-                  <div className="text-[#E0E0E0] font-normal text-lg">{formatedDateToStr}</div>
+                  <div className="text-[#E0E0E0] font-normal text-lg">
+                    {formatedDateToStr}
+                  </div>
                   <div className="flex items-center justify-between w-full gap-12">
                     <div className="flex items-center gap-1">
                       <svg
@@ -438,7 +458,9 @@ export default function HomePage() {
                           fill="#878787"
                         />
                       </svg>
-                      <div className="text-[#E0E0E0] font-normal text-lg">6:00 PM</div>
+                      <div className="text-[#E0E0E0] font-normal text-lg">
+                        6:00 PM
+                      </div>
                     </div>
 
                     <Link
@@ -460,7 +482,9 @@ export default function HomePage() {
                           fill="#0698D6"
                         />
                       </svg>
-                      <div className="text-[#0698D6] text-lg font-normal">LY Turf</div>
+                      <div className="text-[#0698D6] text-lg font-normal">
+                        LY Turf
+                      </div>
                     </Link>
                   </div>
                 </div>
@@ -481,7 +505,9 @@ export default function HomePage() {
                       fill="#F7F7F7"
                     />
                   </svg>
-                  <div className="text-base text-[#F7F7F7] font-semibold">{eachEle.game}</div>
+                  <div className="text-base text-[#F7F7F7] font-semibold">
+                    {eachEle.game}
+                  </div>
                 </div>
                 <div className="flex items-center justify-between mt-2">
                   {/* team 1 */}
@@ -529,7 +555,9 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
-                  <div className="text-[#E0E0E0] text-xs font-normal">{formatedDateToStr}</div>
+                  <div className="text-[#E0E0E0] text-xs font-normal">
+                    {formatedDateToStr}
+                  </div>
                   <div className="flex items-center gap-[14px]">
                     <div className="flex items-center gap-[2px]">
                       <svg
@@ -544,7 +572,9 @@ export default function HomePage() {
                           fill="#878787"
                         />
                       </svg>
-                      <div className="text-[#E0E0E0] text-xs font-normal">6:00 PM</div>
+                      <div className="text-[#E0E0E0] text-xs font-normal">
+                        6:00 PM
+                      </div>
                     </div>
                     <Link
                       target="_Blank"
@@ -566,7 +596,9 @@ export default function HomePage() {
                         />
                       </svg>
 
-                      <div className="text-[#0698D6] text-sm font-normal">LY Turf</div>
+                      <div className="text-[#0698D6] text-sm font-normal">
+                        LY Turf
+                      </div>
                     </Link>
                   </div>
                 </div>
@@ -580,7 +612,9 @@ export default function HomePage() {
       {/* Gallery starts */}
       <div className="px-4 sm:px-[76px] flex flex-col gap-4 pb-20">
         <div className="flex items-center justify-between">
-          <div className="text-[#FFF] text-[20px] sm:text-[32px] font-semibold">Gallery</div>
+          <div className="text-[#FFF] text-[20px] sm:text-[32px] font-semibold">
+            Gallery
+          </div>
           <div className="text-white text-xs sm:text-base cursor-pointer underline underline-offset-2">
             View more
           </div>

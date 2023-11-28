@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@/public/images/logo.svg";
+import logo from "@/app/images/logo.svg";
 import Link from "next/link";
 
 export default function Footer() {
@@ -15,7 +15,13 @@ export default function Footer() {
             <div className="flex flex-col items-start gap-2">
               <div className="text-white text-xs">Powered by </div>
               <div className="flex items-center gap-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="33"
+                  viewBox="0 0 32 33"
+                  fill="none"
+                >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -47,12 +53,21 @@ export default function Footer() {
             <div className="w-[1px] h-full bg-[rgba(255,255,255,0.30)]"></div>
             <div className="flex flex-col items-start gap-2">
               <div className="text-white text-xs">Co-Powered by </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="106" height="33" viewBox="0 0 106 33" fill="none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="106"
+                height="33"
+                viewBox="0 0 106 33"
+                fill="none"
+              >
                 <path
                   d="M16 32.4353C24.8366 32.4353 32 25.2719 32 16.4353C32 7.59875 24.8366 0.435303 16 0.435303C7.16345 0.435303 0 7.59875 0 16.4353C0 25.2719 7.16345 32.4353 16 32.4353Z"
                   fill="#F5DD01"
                 />
-                <path d="M26.7604 12.8443H25.1265C25.1265 10.8566 23.5111 9.24125 21.5234 9.24125V7.60742C24.4127 7.60742 26.7604 9.95816 26.7604 12.8443Z" fill="white" />
+                <path
+                  d="M26.7604 12.8443H25.1265C25.1265 10.8566 23.5111 9.24125 21.5234 9.24125V7.60742C24.4127 7.60742 26.7604 9.95816 26.7604 12.8443Z"
+                  fill="white"
+                />
                 <path
                   d="M11.8273 21.0198C11.0212 21.0198 10.3658 20.3705 10.3566 19.5675V19.5613C10.3566 19.5582 10.3566 19.5521 10.3566 19.549V14.9213V9.25977H7.41504V19.272C7.41504 21.2444 8.6335 22.9305 10.3566 23.6228C10.8981 23.8413 11.4858 23.9613 12.1043 23.9613H13.2981V21.0198C13.2981 21.0198 11.8489 21.0198 11.8273 21.0198Z"
                   fill="white"
@@ -69,7 +84,10 @@ export default function Footer() {
                   d="M61.0112 13.8968C61.5742 14.463 61.8542 15.2999 61.8542 16.4045V20.9553H60.7958V16.5091C60.7958 15.6938 60.5989 15.0722 60.205 14.6445C59.8112 14.2169 59.2573 14.0014 58.5404 14.0014C57.725 14.0014 57.0819 14.2538 56.6142 14.7553C56.1466 15.2569 55.9127 15.9522 55.9127 16.8353V20.9553H54.8542V16.5091C54.8542 15.6938 54.6573 15.0722 54.2635 14.6445C53.8696 14.2169 53.3096 14.0014 52.5835 14.0014C51.7773 14.0014 51.1373 14.2538 50.6665 14.7553C50.1958 15.2569 49.9589 15.9522 49.9589 16.8353V20.9553H48.9004V13.1061H49.9158V14.5399C50.1927 14.063 50.5835 13.6938 51.0789 13.4353C51.5773 13.1768 52.1496 13.0476 52.7958 13.0476C53.4512 13.0476 54.0204 13.1861 54.5035 13.4661C54.9866 13.7461 55.3466 14.1584 55.5866 14.7061C55.8758 14.1892 56.2912 13.783 56.8327 13.4907C57.3742 13.1984 57.9927 13.0507 58.6912 13.0507C59.6758 13.0476 60.4512 13.3307 61.0112 13.8968Z"
                   fill="white"
                 />
-                <path d="M65.332 13.1061H66.3905V20.9553H65.332V13.1061Z" fill="white" />
+                <path
+                  d="M65.332 13.1061H66.3905V20.9553H65.332V13.1061Z"
+                  fill="white"
+                />
                 <path
                   d="M76.2948 13.9061C76.8764 14.4784 77.1687 15.3122 77.1687 16.4045V20.9553H76.1102V16.5091C76.1102 15.6938 75.9071 15.0722 75.4979 14.6445C75.0887 14.2169 74.5071 14.0014 73.7533 14.0014C72.9071 14.0014 72.2394 14.2538 71.7471 14.7553C71.2548 15.2569 71.0087 15.9522 71.0087 16.8353V20.9553H69.9502V13.1061H70.9656V14.5522C71.2548 14.0753 71.6548 13.703 72.1656 13.4415C72.6794 13.1768 73.2733 13.0476 73.9502 13.0476C74.9287 13.0476 75.7102 13.3338 76.2948 13.9061Z"
                   fill="white"
@@ -96,7 +114,14 @@ export default function Footer() {
         </div>
         {/* left ends */}
         {/* footer image */}
-        <svg className="" width="214" height="287" viewBox="0 0 214 287" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          className=""
+          width="214"
+          height="287"
+          viewBox="0 0 214 287"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g opacity="0.1">
             <path
               d="M121.123 9.38012C90.8108 84.2447 193.328 200.87 101.028 279.809C99.8363 280.828 98.3037 281.507 96.6008 281.507C95.0681 281.507 93.5355 280.998 92.1732 279.979C90.8108 278.961 89.9593 277.603 89.6187 276.075C89.2782 274.547 89.4485 272.849 90.1297 271.491C130.83 184.913 -44.4034 93.7513 111.076 0.892066C112.268 0.213022 113.801 -0.1265 115.163 0.0432609C116.525 0.213022 117.888 0.722305 119.08 1.74087C120.102 2.75944 120.953 3.94775 121.294 5.30584C121.634 6.49416 121.634 8.02203 121.123 9.38012Z"
@@ -115,20 +140,62 @@ export default function Footer() {
 
         <div className="flex flex-col gap-10 w-[444px]">
           <div className="text-[#CDCDCD] text-xl">
-            Athlesia is gives a platform to all the Fitness Thursday trainings performed their final test. Athlesia taps into our sporty spirits with a creative twist that culminates into a
-            spectacular event to behold.
+            Athlesia is gives a platform to all the Fitness Thursday trainings
+            performed their final test. Athlesia taps into our sporty spirits
+            with a creative twist that culminates into a spectacular event to
+            behold.
           </div>
           <div className="flex items-center gap-5">
-            <Link href={"https://www.instagram.com/lemonyellowllp/"} target="_blank">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="2" width="20" height="20" rx="4" stroke="white" strokeWidth="1.5" />
+            <Link
+              href={"https://www.instagram.com/lemonyellowllp/"}
+              target="_blank"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="20"
+                  height="20"
+                  rx="4"
+                  stroke="white"
+                  strokeWidth="1.5"
+                />
                 <circle cx="18" cy="6" r="1" fill="white" />
-                <circle cx="12" cy="12" r="5" stroke="white" strokeWidth="1.5" />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="5"
+                  stroke="white"
+                  strokeWidth="1.5"
+                />
               </svg>
             </Link>
-            <Link href={"https://www.youtube.com/channel/UC7fttRvh6g3F3u7bOyvXipw"} target="_blank">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="2" y="3" width="20" height="18" rx="4" stroke="white" strokeWidth="1.5" />
+            <Link
+              href={"https://www.youtube.com/channel/UC7fttRvh6g3F3u7bOyvXipw"}
+              target="_blank"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="3"
+                  width="20"
+                  height="18"
+                  rx="4"
+                  stroke="white"
+                  strokeWidth="1.5"
+                />
                 <path
                   d="M10.4472 8.72361L15.2111 11.1056C15.9482 11.4741 15.9482 12.5259 15.2111 12.8944L10.4472 15.2764C9.78231 15.6088 9 15.1253 9 14.382V9.61803C9 8.87465 9.78231 8.39116 10.4472 8.72361Z"
                   stroke="white"
@@ -137,10 +204,24 @@ export default function Footer() {
                 />
               </svg>
             </Link>
-            <Link href={"https://in.linkedin.com/company/lemonyellow-net"} target="_blank">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Link
+              href={"https://in.linkedin.com/company/lemonyellow-net"}
+              target="_blank"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <circle cx="4" cy="4" r="2" stroke="white" strokeWidth="1.5" />
-                <path d="M2 8.5H6V22H2V8.5Z" stroke="white" strokeWidth="1.5" strokeLinejoin="round" />
+                <path
+                  d="M2 8.5H6V22H2V8.5Z"
+                  stroke="white"
+                  strokeWidth="1.5"
+                  strokeLinejoin="round"
+                />
                 <path
                   d="M9 22H13V15C13 13.8954 13.8954 13 15 13C16.1046 13 17 13.8954 17 15V22H21V15C21 11.6863 18.3137 9 15 9C14.2987 9 13.6256 9.12031 13 9.34141V8.5H9V22ZM9 22V15"
                   stroke="white"
@@ -150,7 +231,13 @@ export default function Footer() {
               </svg>
             </Link>
             <Link href={"https://lemonyellow.design/"} target="_blank">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12C22 10.3431 17.5228 9 12 9C6.47715 9 2 10.3431 2 12M22 12C22 13.6569 17.5228 15 12 15C6.47715 15 2 13.6569 2 12M12 22C6.47715 22 2 17.5228 2 12M12 22C14.2091 22 16 17.5228 16 12C16 6.47715 14.2091 2 12 2M12 22C9.79086 22 8 17.5228 8 12C8 6.47715 9.79086 2 12 2M2 12C2 6.47715 6.47715 2 12 2"
                   stroke="white"
@@ -200,7 +287,13 @@ export default function Footer() {
               </svg>
               <div className="text-white text-xs">Lemon Yellow LLP</div>
             </div> */}
-            <svg width="124" height="24" viewBox="0 0 124 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="124"
+              height="24"
+              viewBox="0 0 124 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -234,9 +327,21 @@ export default function Footer() {
             {/* </div> */}
             {/* <div className="flex items-center gap-2"> */}
             <div className="text-[#FFF] text-[10px]">Co-Powered by </div>
-            <svg width="79" height="24" viewBox="0 0 79 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37259 0 0 5.37258 0 12C0 18.6274 5.37259 24 12 24Z" fill="#F5DD01" />
-              <path d="M20.0703 9.30694H18.8449C18.8449 7.81617 17.6333 6.60464 16.1426 6.60464V5.37927C18.3095 5.37927 20.0703 7.14233 20.0703 9.30694Z" fill="white" />
+            <svg
+              width="79"
+              height="24"
+              viewBox="0 0 79 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37259 0 0 5.37258 0 12C0 18.6274 5.37259 24 12 24Z"
+                fill="#F5DD01"
+              />
+              <path
+                d="M20.0703 9.30694H18.8449C18.8449 7.81617 17.6333 6.60464 16.1426 6.60464V5.37927C18.3095 5.37927 20.0703 7.14233 20.0703 9.30694Z"
+                fill="white"
+              />
               <path
                 d="M8.87076 15.4385C8.26614 15.4385 7.7746 14.9516 7.76768 14.3493V14.3447C7.76768 14.3424 7.76768 14.3377 7.76768 14.3354V10.8647V6.61853H5.56152V14.1277C5.56152 15.607 6.47537 16.8716 7.76768 17.3908C8.17383 17.5547 8.6146 17.6447 9.07845 17.6447H9.97383V15.4385C9.97383 15.4385 8.88691 15.4385 8.87076 15.4385Z"
                 fill="white"
@@ -253,7 +358,10 @@ export default function Footer() {
                 d="M45.7589 10.0962C46.1812 10.5208 46.3912 11.1485 46.3912 11.9769V15.39H45.5973V12.0554C45.5973 11.4438 45.4496 10.9777 45.1543 10.6569C44.8589 10.3362 44.4435 10.1746 43.9058 10.1746C43.2942 10.1746 42.8119 10.3639 42.4612 10.74C42.1104 11.1162 41.935 11.6377 41.935 12.3V15.39H41.1412V12.0554C41.1412 11.4438 40.9935 10.9777 40.6981 10.6569C40.4027 10.3362 39.9827 10.1746 39.4381 10.1746C38.8335 10.1746 38.3535 10.3639 38.0004 10.74C37.6473 11.1162 37.4696 11.6377 37.4696 12.3V15.39H36.6758V9.50309H37.4373V10.5785C37.645 10.2208 37.9381 9.94385 38.3096 9.75C38.6835 9.55615 39.1127 9.45923 39.5973 9.45923C40.0889 9.45923 40.5158 9.56307 40.8781 9.77307C41.2404 9.98307 41.5104 10.2923 41.6904 10.7031C41.9073 10.3154 42.2189 10.0108 42.625 9.79155C43.0312 9.57232 43.495 9.46154 44.0189 9.46154C44.7573 9.45923 45.3389 9.67154 45.7589 10.0962Z"
                 fill="white"
               />
-              <path d="M48.999 9.50305H49.7929V15.3899H48.999V9.50305Z" fill="white" />
+              <path
+                d="M48.999 9.50305H49.7929V15.3899H48.999V9.50305Z"
+                fill="white"
+              />
               <path
                 d="M57.2214 10.1031C57.6575 10.5323 57.8767 11.1577 57.8767 11.9769V15.39H57.0829V12.0554C57.0829 11.4438 56.9306 10.9777 56.6237 10.6569C56.3167 10.3362 55.8806 10.1746 55.3152 10.1746C54.6806 10.1746 54.1798 10.3639 53.8106 10.74C53.4414 11.1162 53.2567 11.6377 53.2567 12.3V15.39H52.4629V9.50309H53.2244V10.5877C53.4414 10.23 53.7414 9.95077 54.1244 9.75462C54.5098 9.55616 54.9552 9.45923 55.4629 9.45923C56.1967 9.45923 56.7829 9.67385 57.2214 10.1031Z"
                 fill="white"
@@ -279,20 +387,55 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-white text-sm">
-          Athlesia is gives a platform to all the Fitness Thursday trainings performed their final test. Athlesia taps into our sporty spirits with a creative twist that culminates into a spectacular
-          event to behold.
+          Athlesia is gives a platform to all the Fitness Thursday trainings
+          performed their final test. Athlesia taps into our sporty spirits with
+          a creative twist that culminates into a spectacular event to behold.
         </div>
         <div className="flex items-center gap-5">
-          <Link href={"https://www.instagram.com/lemonyellowllp/"} target="_blank">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="2" width="20" height="20" rx="4" stroke="white" strokeWidth="1.5" />
+          <Link
+            href={"https://www.instagram.com/lemonyellowllp/"}
+            target="_blank"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="2"
+                y="2"
+                width="20"
+                height="20"
+                rx="4"
+                stroke="white"
+                strokeWidth="1.5"
+              />
               <circle cx="18" cy="6" r="1" fill="white" />
               <circle cx="12" cy="12" r="5" stroke="white" strokeWidth="1.5" />
             </svg>
           </Link>
-          <Link href={"https://www.youtube.com/channel/UC7fttRvh6g3F3u7bOyvXipw"} target="_blank">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="3" width="20" height="18" rx="4" stroke="white" strokeWidth="1.5" />
+          <Link
+            href={"https://www.youtube.com/channel/UC7fttRvh6g3F3u7bOyvXipw"}
+            target="_blank"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="2"
+                y="3"
+                width="20"
+                height="18"
+                rx="4"
+                stroke="white"
+                strokeWidth="1.5"
+              />
               <path
                 d="M10.4472 8.72361L15.2111 11.1056C15.9482 11.4741 15.9482 12.5259 15.2111 12.8944L10.4472 15.2764C9.78231 15.6088 9 15.1253 9 14.382V9.61803C9 8.87465 9.78231 8.39116 10.4472 8.72361Z"
                 stroke="white"
@@ -302,10 +445,24 @@ export default function Footer() {
             </svg>
           </Link>
 
-          <Link href={"https://in.linkedin.com/company/lemonyellow-net"} target="_blank">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <Link
+            href={"https://in.linkedin.com/company/lemonyellow-net"}
+            target="_blank"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <circle cx="4" cy="4" r="2" stroke="white" strokeWidth="1.5" />
-              <path d="M2 8.5H6V22H2V8.5Z" stroke="white" strokeWidth="1.5" strokeLinejoin="round" />
+              <path
+                d="M2 8.5H6V22H2V8.5Z"
+                stroke="white"
+                strokeWidth="1.5"
+                strokeLinejoin="round"
+              />
               <path
                 d="M9 22H13V15C13 13.8954 13.8954 13 15 13C16.1046 13 17 13.8954 17 15V22H21V15C21 11.6863 18.3137 9 15 9C14.2987 9 13.6256 9.12031 13 9.34141V8.5H9V22ZM9 22V15"
                 stroke="white"
@@ -316,7 +473,13 @@ export default function Footer() {
           </Link>
 
           <Link href={"https://lemonyellow.design/"} target="_blank">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12C22 10.3431 17.5228 9 12 9C6.47715 9 2 10.3431 2 12M22 12C22 13.6569 17.5228 15 12 15C6.47715 15 2 13.6569 2 12M12 22C6.47715 22 2 17.5228 2 12M12 22C14.2091 22 16 17.5228 16 12C16 6.47715 14.2091 2 12 2M12 22C9.79086 22 8 17.5228 8 12C8 6.47715 9.79086 2 12 2M2 12C2 6.47715 6.47715 2 12 2"
                 stroke="white"
@@ -326,7 +489,13 @@ export default function Footer() {
           </Link>
         </div>
         <div className="absolute bottom-1 right-1">
-          <svg width="100" height="132" viewBox="0 0 100 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="100"
+            height="132"
+            viewBox="0 0 100 132"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g opacity="0.1">
               <path
                 d="M56.5954 4.31166C42.4304 38.7239 90.3366 92.3321 47.2051 128.617C46.6481 129.085 45.9319 129.397 45.1361 129.397C44.4199 129.397 43.7037 129.163 43.0671 128.695C42.4304 128.227 42.0325 127.603 41.8734 126.9C41.7142 126.198 41.7938 125.418 42.1122 124.794C61.1314 84.9971 -20.7549 43.0937 51.9002 0.410047C52.4573 0.0979176 53.1735 -0.058147 53.8102 0.0198853C54.4468 0.0979176 55.0834 0.332014 55.6405 0.800208C56.118 1.2684 56.5158 1.81462 56.675 2.43888C56.8341 2.98511 56.8341 3.6874 56.5954 4.31166Z"

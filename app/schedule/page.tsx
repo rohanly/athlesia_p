@@ -3,7 +3,7 @@ import scheduleData from "@/data.json";
 import Matchcard from "@/components/matchcard/Matchcard";
 import { useEffect, useState } from "react";
 import getAllMatches from "@/lib/getAllMatches";
-import Banner from "@/public/images/Banner.png";
+import Banner from "@/app/images/Banner.png";
 import moment from "moment";
 
 interface schedule {
@@ -21,7 +21,13 @@ interface schedule {
 }
 
 export default function Schedule() {
-  const dates: string[] = ["07-12-2023", "21-12-2023", "04-01-2024", "28-11-2023", "29-11-2023"];
+  const dates: string[] = [
+    "07-12-2023",
+    "21-12-2023",
+    "04-01-2024",
+    "28-11-2023",
+    "29-11-2023",
+  ];
   const [matches, setMatches] = useState<schedule[]>([]);
 
   const formattedDate = (inputDate: string) => {
